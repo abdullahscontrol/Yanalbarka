@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<style>
+    section{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: url(01.PNG);
+    }
+    section h2{
+        font-size: 16vw;
+        color: #000;
+        background: #fff;
+        padding: 20px;
+        mix-blend-mode: screen;
+    }
+</style>
+<body>
+   <section>
+    <h2>Random</h2>
+   </section>
+
+    </div>
+    
+</body>
+<script>
+function changeBg(){
+
+    const images = [
+        'url("1.png")',
+        'url("2.jpg")',
+        'url("3.jpg")',
+        'url("4.jpg")',
+        'url("5.png")',
+        'url("6.png")',
+        'url("7.png")',
+    ]
+
+    const section = document.querySelector('section');
+
+    const bg = images[Math.floor(Math.random() * 
+    images.length)];
+    section.style.backgroundImage = bg;
+
+}
+
+setInterval(changeBg, 1000);
+</script>
+</html>
